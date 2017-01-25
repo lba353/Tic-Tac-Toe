@@ -1,9 +1,11 @@
 package com.example.student.tic_tac_toe;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -158,6 +160,68 @@ public class MainActivity extends AppCompatActivity {
     
     
     private void check3InRow() {
-        
+        if(state1 == state2 && state2 == state3) {
+            CharSequence text = "Tic Tac Toe!";
+            Context context = getApplicationContext();
+            int duration = Toast.LENGTH_SHORT;
+            Toast myMessage= Toast.makeText(context, text, duration);
+            myMessage.show();
+        }
+
+        if(state4 == state5 && state5 == state6) {
+            CharSequence text = "Tic Tac Toe!";
+            Context context = getApplicationContext();
+            int duration = Toast.LENGTH_SHORT;
+            Toast myMessage= Toast.makeText(context, text, duration);
+            myMessage.show();
+        }
+
+        if(state7 == state8 && state8 == state9) {
+            CharSequence text = "Tic Tac Toe!";
+            Context context = getApplicationContext();
+            int duration = Toast.LENGTH_SHORT;
+            Toast myMessage= Toast.makeText(context, text, duration);
+            myMessage.show();
+        }
+
+        if(state1 == state4 && state4 == state7) {
+            CharSequence text = "Tic Tac Toe!";
+            Context context = getApplicationContext();
+            int duration = Toast.LENGTH_SHORT;
+            Toast myMessage= Toast.makeText(context, text, duration);
+            myMessage.show();
+        }
+
+        if(state2 == state5 && state5 == state8) {
+            CharSequence text = "Tic Tac Toe!";
+            Context context = getApplicationContext();
+            int duration = Toast.LENGTH_SHORT;
+            Toast myMessage= Toast.makeText(context, text, duration);
+            myMessage.show();
+        }
+
+        if(state3 == state6 && state6 == state9) {
+            CharSequence text = "Tic Tac Toe!";
+            Context context = getApplicationContext();
+            int duration = Toast.LENGTH_SHORT;
+            Toast myMessage= Toast.makeText(context, text, duration);
+            myMessage.show();
+        }
+
+        if(state1 == state5 && state5 == state9) {
+            CharSequence text = "Tic Tac Toe!";
+            Context context = getApplicationContext();
+            int duration = Toast.LENGTH_SHORT;
+            Toast myMessage= Toast.makeText(context, text, duration);
+            myMessage.show();
+        }
+
+        if(state3 == state5 && state5 == state7) {
+            CharSequence text = "Tic Tac Toe!";
+            Context context = getApplicationContext();
+            int duration = Toast.LENGTH_SHORT;
+            Toast myMessage= Toast.makeText(context, text, duration);
+            myMessage.show();
+        }
     }
 }
